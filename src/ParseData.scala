@@ -15,7 +15,7 @@ object ParseData {
       temp += col.toFloat
     }
     println("____________________________________________________________________")
-    println(mean(temp))
+    println("Mean Temp = "+mean(temp))
     bufferedSource.close
   }
 
