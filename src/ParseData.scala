@@ -11,7 +11,7 @@ object ParseData {
 
   def emitData() = {
     var temp = new ListBuffer[Float]()
-    val bufferedSource = io.Source.fromFile("src/WeatherDataset_Final.csv")     // Locate file location for your DataSet
+    val bufferedSource = io.Source.fromFile("src/WeatherDataset_Final.csv") // Locate file location for your DataSet
     println("WeatherStation Year-Month Temp  Pressure")
     for (line <- bufferedSource.getLines) {
       val cols = line.split(",").map(_.trim)
@@ -34,7 +34,6 @@ object ParseData {
       Fi = (Fi + alpha * (col - Fi))
       println(Fi)
     }
-    println("-------------")
   }
 
 }
